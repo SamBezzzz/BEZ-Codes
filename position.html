@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">1</div>
+        <div class="card2">2</div>
+        <div class="fixed">3</div>
+        <div class="sticky">4</div>
+        <div>5</div>
+    </div>
+
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            background-color: lightgray;
+        }
+
+        .container {
+            height: 700px;
+            width: 700px;
+            background-color: papayawhip;
+            position: relative;
+        }
+
+        .card {
+            height: 200px;
+            width: 200px;
+            background-color: lightblue;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+
+        .card2 {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .fixed {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+        }
+
+        .sticky {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            position: absolute;
+            top: 0px;
+            z-index: 2;
+            /* right: 30px; */
+        }
+    </style>
+</body>
+</html>
